@@ -1,0 +1,100 @@
+body{
+    background-color: yellow;
+    text-align: center;
+}
+
+header{
+    background-color: lightblue;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom: 10px;
+}
+
+.job{
+    font-size: 1rem;
+}
+
+.fa-icon{
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+h2{
+    text-align: left;
+    font-size: 2rem;
+}
+
+section{
+    background-color:white;
+    margin: 3% 20%;
+    overflow: auto;
+    /* this makes the margins not overflow and actually adds on to the border of the
+    parent container */
+}
+
+
+.main-pic{
+    border-radius: 25px;
+}
+
+.section-inner{
+    margin: 3%; 
+}
+
+.project-img{
+    max-width: 90%;
+    height: auto;
+}
+
+.projects-section .section-inner .row .col p{
+    text-align: center;
+}
+
+/* .description{
+    padding: 30px;
+    margin-left: 350px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+
+.aboutme-inner{
+    margin: 50px 50px; 
+    margin-top: 50px;
+} */
+
+
+/* .flexbox1{
+    display: flex;
+    flex-wrap: wrap; */
+
+/* } */
+
+/* .main-pic{
+    width: 100%;
+    max-width: 450px;
+    height: auto; */
+/* } */
+
+
+/* .description{
+    padding: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+    flex: 3 1 600px;
+
+} */
+
+@media (max-width: 768px) {
+    section{
+        background-color:white;
+        margin: 3% 10%;
+        
+    }
+
+    .main-pic{
+        width: 250px;
+    }
+}
