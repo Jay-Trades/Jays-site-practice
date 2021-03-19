@@ -1,19 +1,70 @@
 body{
-    background-color: yellow;
     text-align: center;
 }
 
 header{
-    background-color: lightblue;
+    position: relative;
 }
 
-h1{
-    font-size:4rem;
-    margin-bottom: 10px;
+#grad1 {
+    height: 100%;
+    background-color: rgb(230, 228, 228); /* For browsers that do not support gradients */
+    /* background-image: linear-gradient(pink, rgb(228, 228, 86)); */
+  }
+
+  hr{
+      text-decoration: none;
+      border-color: black;
+      border-bottom: none;
+  }
+
+video{
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+/* 
+#myVideo {
+    min-width: 100%;
+    min-height: 100%;
+} */
+
+.overlay{
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 30%; bottom: 20%; left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.name{
+    font-size:3rem;
+    line-height:1.5;
+}
+
+.button{
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13pt;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    background: rgba(0,0,0,0);
+    margin-top: 10px;
+
+}
+
+.mdi{
+    top: 16px;
 }
 
 .job{
     font-size: 1rem;
+    padding: 30px;
 }
 
 .fa-icon{
@@ -26,12 +77,21 @@ h2{
     font-size: 2rem;
 }
 
+
+/* section styles */
 section{
-    background-color:white;
     margin: 3% 20%;
     overflow: auto;
     /* this makes the margins not overflow and actually adds on to the border of the
     parent container */
+}
+.education-section, .aboutme{
+    background-color:white;
+}
+
+.contact{
+    background-color:#252934;
+    margin: 0;
 }
 
 
@@ -43,58 +103,198 @@ section{
     margin: 3%; 
 }
 
-.project-img{
+/* skills */
+
+.skills{
+    /* background-color: lightgrey; */
+    margin: 3% 9%;
+}
+
+#skill{
+    height: 75px;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+
+
+/* Projects Sections */
+
+.projects-section{
+    background-color:white;
+    width: 100%;
+    margin: 0;;
+}
+
+.project-inner{
+    margin: 3% 20%;
+}
+
+
+.projects-section h2{
+    text-align: center;
+}
+
+/* .project-img{
     max-width: 90%;
     height: auto;
+} */
+
+
+.project-card p{
+    max-width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
 }
 
 .projects-section .section-inner .row .col p{
     text-align: center;
 }
 
-/* .description{
-    padding: 30px;
-    margin-left: 350px;
+.projects-section .row div{
+    margin-bottom: 30px;
+}
+
+/* Education Section */
+
+.education-container{
+    display: flex;
+    /* border-style: solid; */
+    justify-content: space-between;
+    flex:1 1 350px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.school-title{
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    
+}
+
+.school-description{
+    margin-top: 0;
+    text-align: left;
+    padding: 5px;
+        margin-right: 60px;
+}
+
+/* education pictures */
+.upenn{
+    max-width: 80%;
+    justify-content: flex-end;
+    height: auto;
+}
+
+.rutgers{
+    min-width: 240px;
+    max-width: 350px;
+    justify-content: flex-end;
+    height: auto;
+}
+
+/* contact page */
+
+#contact{
+    background-color: #252934;
+    margin-bottom: auto;
+    margin: 0;
+}
+.contact-inner{
+    margin: 25px 20%;
+}
+
+#contact h2{
+    color: white;
+    text-align: center;
+}
+
+.contact-bar{
+    background-color: white;
+    margin: 25px auto 40px;
+    width: 110px;
+    height: 3px;
+}
+
+#contact p{
+    color: rgb(19, 175, 228);
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+form{
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+}
+.email {
+    padding: 10px;
+    margin-top: 25px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    height: 200px;
+}
+
+#email-submit{
+    margin-top:20px;
+}
+
+/* footer */
+
+.page-link{
+    background: #e31b6d;
+    cursor: pointer;
+    font-size: 30pt;
+    height: 50px;
+    left: 0;
+    line-height: 40pt;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    transition: background 0.5s;
+    width: 47px;
+}
+
+.site-footer{
+    background-color: #282f41;
+    padding: 50px;
+}
+
+.site-footer p{
+    margin-top:0;
+}
+
+.footnote{
+    color: lightgrey;
 }
 
 
-.aboutme-inner{
-    margin: 50px 50px; 
-    margin-top: 50px;
-} */
-
-
-/* .flexbox1{
-    display: flex;
-    flex-wrap: wrap; */
-
-/* } */
-
-/* .main-pic{
-    width: 100%;
-    max-width: 450px;
-    height: auto; */
-/* } */
-
-
-/* .description{
-    padding: 30px;
-    text-align: left;
-    font-size: 1.2rem;
-    flex: 3 1 600px;
-
-} */
 
 @media (max-width: 768px) {
     section{
         background-color:white;
-        margin: 3% 10%;
+        margin: 3% 5%;
         
     }
 
     .main-pic{
         width: 250px;
     }
+
+    .contact-bar {
+        margin: 25px 0 100px 0;
+    }
+}
+@media (max-width: 540px) {
+
+    #skill{
+        height: 45px;
+    }
+
 }

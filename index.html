@@ -5,31 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
 
 
     <title>Jay Chen</title>
 </head>
 
-<body>
+<body id='grad1'>
     <header>
-        <h1 class='name'>I am Jay Chen</h1>
-        <p class='job'>Web Developer</p>
-        <p>
-            <a class="fa-icon fa-2x" href="https://github.com/" title="">
-                <i class="fab fa-github"></i>
-            </a>
-            <a class="fa-icon fa-2x" href="https://twitter.com/" title="">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="fa-icon fa-2x" href="https://www.linkedin.com/" title="">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="fa-icon fa-2x" href="https://facebook.com/" title="">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-          </p>
+        <video autoplay muted loop id="myVideo">
+            <source src="images/Black - 13495.mp4" type="video/mp4">
+          </video>
+        <div class='overlay'>
+            <div class='name'>Hello! I'm <span class="highlight">Jay Chen</span>.
+                <br> I'm a full-ftack web Developer.
+            </div>
+            <button class="button" dest="#projects"><a href="#projects">View my work
+                 <span class="iconify mdi" data-icon="mdi-arrow-right" data-inline="false"></span>
+            </button>
+        </div>
+
     </header>
+
+    <section class='skills'>
+        <div class="row">
+            <div class="col s6 languages">
+                <h5 class="skill-title"><b>Languages</b></h5>       
+                    <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Python" id="skill" src="images/python.png"></div>                             
+                    <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Java" id="skill" src="images/java.png"></div>                             
+                    <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="HTML5" id="skill" src="images/html1.png"></div>           
+                    <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="CSS3 (Cascading Style Sheets)" id="skill" src="images/css1.png"></div>
+                    <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="JavaScript/ES6" id="skill" src="images/javascript.png" ></div>
+                    <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="SQL (Structured Query Language)" id="skill" src="images/sql.png"></div>                                                
+            </div>
+            <div class="col s6">
+                <h5 class="skill-title"><b>Frameworks</b></h5>
+                <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Node" id="skill" src="images/node.png" ></div>
+                <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Flask" id="skill" src="images/flask.svg"></div>
+                <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Bootstrap" id="skill" src="images/bootstrap.png"></div>
+                <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Materialize" id="skill" src="images/materialize.png" ></div>
+                <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="React" id="skill" src="images/react.png" ></div>
+                <div class="col xl2 l4 s6"><img class="tooltipped" data-position="bottom" data-tooltip="Express" id="skill" src="images/express.png" ></div>
+            </div>
+        </div>
+    </section>
 
     <section class='aboutme'>
         <div class='section-inner'>
@@ -52,57 +79,142 @@
         </div>
     </section>
 
-    <section class="projects-section">
-        <div class='section-inner'>
+    <section class="projects-section" id="projects">
+        <div class='project-inner'>
             <h2>Projects</h2>
             <div class='row'>
-                <div class="col s12 m12 l4">
-                    <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
-                    <p>project 1</p>
+                <div class="project-card col s12 m12 l4">
+                    <div class="card hoverable large">
+                        <div class="card-image">
+                            <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
+                            <span class="card-title" style="width:100%; background: rgba(0, 0, 0, 0.5);">Drake API</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <button>Project</button>   
+                            <button>Code</button>       
+                        </div>           
+                    </div>
                 </div>
-                <div class="col s12 m12 l4">
-                    <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
-                    <p>project 2</p>
+                <div class="project-card col s12 m12 l4">
+                    <div class="card hoverable large">
+                        <div class="card-image">
+                            <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <button>Project</button>   
+                            <button>Code</button>  
+                        </div>
+                    </div>
                 </div>
-                <div class="col s12 m12 l4">
-                    <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
-                    <p>project 3</p>
-                </div> 
-                <div class="col s12 m12 l4">
-                    <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
-                    <p>project 1</p>
+                <div class="project-card col s12 m12 l4">
+                    <div class="card hoverable large">
+                        <div class="card-image">
+                            <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <button>Project</button>   
+                            <button>Code</button>  
+                        </div>
+                    </div>
                 </div>
-                <div class="col s12 m12 l4">
-                    <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
-                    <p>project 2</p>
+
+                <div class="project-card col s12 m12 l4">
+                    <div class="card hoverable large">
+                        <div class="card-image">
+                            <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
+                            <span class="card-title" style="width:100%; background: rgba(0, 0, 0, 0.5);">Aurora Game Library (React)</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <button>Project</button>   
+                            <button>Code</button>       
+                        </div>           
+                    </div>
                 </div>
-                <div class="col s12 m12 l4">
-                    <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
-                    <p>project 3</p>
-                </div> 
-            </div>
+                <div class="project-card col s12 m12 l4">
+                    <div class="card hoverable large">
+                        <div class="card-image">
+                            <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <button>Project</button>   
+                            <button>Code</button>  
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card col s12 m12 l4">
+                    <div class="card hoverable large">
+                        <div class="card-image">
+                            <a href="#"><img class='project-img' src="shiba.jpg" alt="project1"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <button>Project</button>   
+                            <button>Code</button>  
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 
     <section class="education-section">
-        <a href="#"><img src="#" alt="project1"></a>
-        <a href="#"><img src="#" alt="project2"></a>
-        <a href="#"><img src="#" alt="project3"></a>
-    </section>
-
-    <section class="contact">
         <div class='section-inner'>
-            <h3>Lets connect. I love meeting new people!</h2>
-            <form action="/" method="post">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <input type="text" placeholder="Lets start a converstation!">
-                <button type='submit' name='button'>Send Message</button>        
-            </form>
+            <h2>Education</h2>
+            <div class='education-container'>
+                <div>
+                    <h3 class='school-title'>University of Pennsylvania</h3>
+                    <p class='school-description'>Masters of Science Computer Science <br> 2020 - 2022</p>
+                </div>
+                <img class='upenn' src="upenn.png" alt="project1">
+            </div>
+            <div class='education-container'>
+                <div>
+                    <h3 class='school-title'>Rutgers Business School</h3>
+                    <p class='school-description'>Bachelor of Science Finance <br> 2014 - 2018 </p>
+                </div>
+                <img class='rutgers' src="rutgers.png" alt="project2">
+            </div>
         </div>
     </section>
 
+    <section id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <path d="M0 0 L50 100 L100 0 Z" fill="rgb(230, 228, 228)" stroke="rgb(230, 228, 228)"></path>
+        </svg>
+        <div class='contact-inner'>
+            <h2>Contact</h2>
+            <div class='contact-bar'></div>
+            <p>Have a question or want to work together? Let's connect!</p>
+            <form action="/" method="post">
+                <input type="text" placeholder="Email" Required>
+                <input type="text" placeholder="Subject" Required>
+                <textarea class='email' type="text" name='email-message' placeholder="Lets start a converstation!" Required></textarea>
+                <button type='submit' name='action' class='btn-large waves-effect waves-light' id='email-submit'>Send Message <i class="far fa-paper-plane"></i>
 
+                </button>        
+            </form>
+        </div>
+        
+    </section>
+
+    <footer class="site-footer">
+        <span class="iconify page-link" data-icon="mdi mdi-chevron-double-up" data-inline='false'></span>
+        <p>
+            <a class="fa-icon fa-3x" href="https://github.com/" title="">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="fa-icon fa-3x" href="https://twitter.com/" title="">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="fa-icon fa-3x" href="https://www.linkedin.com/" title="">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="fa-icon fa-3x" href="https://facebook.com/" title="">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </p>
+
+
+        <div class="footnote">
+            JAY CHEN <span class="highlight">&copy;2020</span>
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src='app.js'></script>
 </body>
 
 </html>
