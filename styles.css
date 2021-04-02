@@ -3,6 +3,7 @@
 body{
     text-align: center;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -77,11 +78,6 @@ video{
     text-decoration: none;
 }
 
-h2{
-    text-align: left;
-    font-size: 2rem;
-}
-
 
 /* section styles */
 
@@ -109,6 +105,16 @@ section{
     margin: 3%; 
 }
 
+.sectino-inner p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+} 
+
+/* about me */
+.aboutme .section-inner{
+    margin: 3% 13%; 
+}
+
 
 /* skills */
 
@@ -127,10 +133,10 @@ section{
 
 /* Projects Sections */
 
-.projects-section{
+#projects{
     background-color:white;
     width: 100%;
-    margin: 0;;
+    margin: 0;
 }
 
 .project-inner{
@@ -149,8 +155,8 @@ section{
 
 .project-card p{
     max-width: 80%;
-    margin: auto;
-    font-size: 1.5rem;
+    margin: 5% auto;
+    font-size: 1.4rem;
 }
 
 .projects-section .section-inner .row .col p{
